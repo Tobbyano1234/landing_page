@@ -1,0 +1,23 @@
+<nav id="my-first">
+
+    <ul>
+        <li class="logotype">
+          <img src="../../assets/logo.png">
+        </li>
+
+<li class="burger" (click)="toggleMenu()">
+  <i class="material-icons">{{isMenuOpen ? "close": "menu"}}</i>
+</li>
+
+      <li class="menu" [class.is-open]="isMenuOpen">
+        <a class="menu-item" href="#">Home</a>
+        <a class="menu-item" href="#">About Us</a>
+        <a class="menu-item" href="#">Services</a>
+        <a class="menu-item ourteam" href="#">Our Team</a>
+        <a class="menu-item menuContact" href="#">Contact Us</a>
+<button class="contact-btn">Contact Us</button>
+
+      </li>
+    </ul>
+</nav>
+

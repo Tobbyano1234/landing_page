@@ -1,0 +1,148 @@
+
+
+ $menuBreakpoint: 700px;
+ $menuHeight: 80px;
+
+.contact-btn {
+  padding: 14px 30px;
+  width: 142px;
+  height: 49px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #2C3878;
+  color: #fff;
+  visibility: hidden;
+}
+
+a {
+   text-decoration: none;
+  color: #333333;
+  font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+ }
+
+ a:hover{
+  font-weight: 600;
+ }
+.logotype img{
+  width: 126px
+}
+
+
+
+
+#my-first{
+  background: #fff;
+  height: $menuHeight;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+height: 100%;
+}
+
+
+
+.burger{
+padding: 0 10px;
+border-left: 1px solid #eee;
+display: none;
+cursor: pointer;
+padding-right: 10%;
+
+
+i{
+  color: #999;
+  line-height: $menuHeight;
+}
+
+@media(max-width: $menuBreakpoint){
+  display: block;
+}
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+
+@media(max-width: $menuBreakpoint){
+  display: none;
+
+  &.is-open{
+    display: block;
+    position: absolute;
+    top: #{$menuHeight + 2};
+    background: #fff;
+    width: 100%;
+
+
+  .menu-item{
+   border-bottom: 1px solid #cccc;
+
+}
+}
+}
+
+
+
+.menu-item{
+  padding: 0 10px;
+  height: $menuHeight;
+  line-height: $menuHeight;
+  display: block;
+  font-size: 0.9rem;
+}
+}
+
+
+
+@media only screen and (min-width: 700px) {
+.contact-btn {
+  visibility: visible;
+  }
+
+li.menu{
+  .menuContact{
+    display: none;
+  }
+  width: 100%;
+  justify-content:space-around;
+  margin-right: 5%;
+}
+
+  #my-first{
+  height: 150px;
+}
+  a.menu-item {
+    width: 35%;
+      height: 130px;
+      text-align: center;
+  }
+
+  .menu {
+    width: 75%;
+  }
+
+  .logotype{
+    width: 31%;
+    padding: 10%;
+  }
+
+
+    button.contact-btn {
+      padding: 7px 7px;
+      width: 130px;
+      height: 43px;
+      font-size: 0.7rem;
+    }
+
+    .menu-item{
+      font-size: 0.7rem;
+    }
+}
